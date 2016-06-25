@@ -9,12 +9,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ camelName }}-{{ version }}.tar.gz
-  md5: 477de879a88b34f707f6d8f0d2dea32c
+  sha256: 8e6b376120245c4813ec3e9c7b8c2eb5d600e52e88f4a638fa12ac42df0c505c
 
 build:
   preserve_egg_dir: True
 
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
