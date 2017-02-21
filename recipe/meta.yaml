@@ -12,7 +12,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}:{{ hash_val }}
+  {{ hash_type }}: {{ hash_val }}
 
 build:
   preserve_egg_dir: True
@@ -42,7 +42,6 @@ about:
   doc_url: https://geoalchemy-2.readthedocs.io/en/latest/
   dev_url: https://github.com/geoalchemy/geoalchemy2
   
-
 extra:
   recipe-maintainers:
     - pmlandwehr
