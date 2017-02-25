@@ -3,13 +3,25 @@ About geoalchemy2
 
 Home: http://geoalchemy.org/
 
-Package license: MIT License
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
 Summary: Using SQLAlchemy with Spatial Databases
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/geoalchemy2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geoalchemy2-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/geoalchemy2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/geoalchemy2-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/geoalchemy2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/geoalchemy2-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/geoalchemy2/badges/version.svg)](https://anaconda.org/conda-forge/geoalchemy2)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/geoalchemy2/badges/downloads.svg)](https://anaconda.org/conda-forge/geoalchemy2)
 
 Installing geoalchemy2
 ======================
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `geoalchemy2` available on your pl
 ```
 conda search geoalchemy2 --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/geoalchemy2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geoalchemy2-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/geoalchemy2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/geoalchemy2-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/geoalchemy2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/geoalchemy2-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/geoalchemy2/badges/version.svg)](https://anaconda.org/conda-forge/geoalchemy2)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/geoalchemy2/badges/downloads.svg)](https://anaconda.org/conda-forge/geoalchemy2)
 
 
 Updating geoalchemy2-feedstock
