@@ -1,27 +1,28 @@
-{% set name = "geoalchemy2" %}
-{% set camelName = "GeoAlchemy2" %}
-{% set version = "0.3.0" %}
+{% set name = "GeoAlchemy2" %}
+{% set version = "0.4.0" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "5220da4aca963f56024fadb5fc17ed60d413aba089d07ffc8487388d83a7434a" %}
+{% set build_num = "1" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ camelName }}-{{ version }}.tar.gz
-  sha256: 8e6b376120245c4813ec3e9c7b8c2eb5d600e52e88f4a638fa12ac42df0c505c
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  {{ hash_type }}: {{ hash_val }}
 
 build:
   preserve_egg_dir: True
-
-  number: 1
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - sqlalchemy >=0.8
 
   run:
     - python
@@ -34,9 +35,13 @@ test:
 
 about:
   home: http://geoalchemy.org/
-  license: MIT License
+  license: MIT
+  license_family: MIT
+  # license_file: No manifest - see https://github.com/geoalchemy/geoalchemy2/pull/147
   summary: 'Using SQLAlchemy with Spatial Databases'
-
+  doc_url: https://geoalchemy-2.readthedocs.io/en/latest/
+  dev_url: https://github.com/geoalchemy/geoalchemy2
+  
 extra:
   recipe-maintainers:
     - pmlandwehr
