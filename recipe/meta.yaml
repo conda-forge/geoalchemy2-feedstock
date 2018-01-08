@@ -1,23 +1,24 @@
 {% set name = "GeoAlchemy2" %}
-{% set version = "0.4.0" %}
-{% set compress_type = "tar.gz" %}
+{% set version = "0.4.1" %}
+{% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "5220da4aca963f56024fadb5fc17ed60d413aba089d07ffc8487388d83a7434a" %}
-{% set build_num = "1" %}
+{% set hash_val = "d9810b2413ca5e61e1b50997eeaa5468bf79bfd829f46ccad8ff6e5648deb1c7" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   preserve_egg_dir: True
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -37,7 +38,7 @@ about:
   home: http://geoalchemy.org/
   license: MIT
   license_family: MIT
-  # license_file: No manifest - see https://github.com/geoalchemy/geoalchemy2/pull/147
+  license_file: COPYING.rst
   summary: 'Using SQLAlchemy with Spatial Databases'
   doc_url: https://geoalchemy-2.readthedocs.io/en/latest/
   dev_url: https://github.com/geoalchemy/geoalchemy2
