@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About geoalchemy2
 =================
 
@@ -18,8 +14,17 @@ Summary: Using SQLAlchemy with Spatial Databases
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/geoalchemy2-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/geoalchemy2-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3919&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/geoalchemy2-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
