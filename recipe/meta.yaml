@@ -1,8 +1,7 @@
 {% set name = "GeoAlchemy2" %}
-{% set version = "0.6.3" %}
+{% set version = "0.8.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "4dc4c6c2bda0fc82cccab4aaff185a6570e13a5351d85e29e12984a55d4138ee" %}
+{% set hash_val = "a8966e41c22b1aa31988236b6b6b2785c4760a9dc2ed1a8b9470495c63aa1d4f" %}
 
 package:
   name: {{ name|lower }}
@@ -10,13 +9,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -37,10 +36,10 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING.rst
-  summary: 'Using SQLAlchemy with Spatial Databases'
+  summary: Using SQLAlchemy with Spatial Databases
   doc_url: https://geoalchemy-2.readthedocs.io/en/latest/
   dev_url: https://github.com/geoalchemy/geoalchemy2
-  
+
 extra:
   recipe-maintainers:
     - pmlandwehr
