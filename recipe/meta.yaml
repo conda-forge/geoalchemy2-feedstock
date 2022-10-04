@@ -1,5 +1,5 @@
 {% set name = "GeoAlchemy2" %}
-{% set version = "0.10.2" %}
+{% set version = "0.12.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GeoAlchemy2-{{ version }}.tar.gz
-  sha256: 3db833746e11bc802b754751ec94eaab81009a9ad8fe647d461fe76d1a47a3fd
+  sha256: 31c2502dce317b57b335e4eb87562d501fa39e46c728be514d9b86091e08dd67
 
 build:
   noarch: python
@@ -37,10 +37,10 @@ about:
   summary: Using SQLAlchemy with Spatial Databases
   license: MIT
   license_family: MIT
-  license_file: COPYING.rst  
+  license_file: COPYING.rst
   doc_url: https://geoalchemy-2.readthedocs.io/en/latest/
   dev_url: https://github.com/geoalchemy/geoalchemy2
-  
+
 extra:
   recipe-maintainers:
     - swainn
