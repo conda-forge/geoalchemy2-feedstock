@@ -1,11 +1,11 @@
-About geoalchemy2
-=================
+About geoalchemy2-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoalchemy2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://geoalchemy-2.readthedocs.io/en/latest/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoalchemy2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Using SQLAlchemy with Spatial Databases
 
