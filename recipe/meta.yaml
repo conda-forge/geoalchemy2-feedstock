@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.7
-    - setuptools-scm
+    - setuptools-scm >=3.4
+    - pip
   run:
-    - packaging
     - python >=3.7
     - sqlalchemy >=1.4
+    - packaging
 
 test:
   imports:
