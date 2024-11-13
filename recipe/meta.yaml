@@ -1,5 +1,5 @@
 {% set name = "geoalchemy2" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geoalchemy2-{{ version }}.tar.gz
-  sha256: 3af0272db927373e74ee3b064cdc9464ba08defdb945c51745db1b841482f5dc
+  sha256: df64bb72af70daafaac3f359492c96501c37ab85ed20f9510c99cc6d02881100
 
 build:
   noarch: python
