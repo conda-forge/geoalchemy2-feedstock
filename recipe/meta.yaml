@@ -1,4 +1,4 @@
-{% set python_min = "3.7" %}
+{% set python_min = "3.10" %}
 {% set name = "geoalchemy2" %}
 {% set version = "0.18.0" %}
 
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=42
     - setuptools-scm >=3.4
     - pip
   run:
