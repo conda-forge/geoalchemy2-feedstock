@@ -1,14 +1,13 @@
-{% set python_min = "3.10" %}
 {% set name = "geoalchemy2" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoalchemy2-{{ version }}.tar.gz
-  sha256: 450f427f4bc3cf2d5ddee0af3763aed0f3eea2384e7c9a99798d8f1508279322
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/geoalchemy2-{{ version }}.tar.gz
+  sha256: f6e458b7b6af6194d698a5bd4a45550b8f851bf3e4326b0d61b2a7b83ec1c6a4
 
 build:
   noarch: python
